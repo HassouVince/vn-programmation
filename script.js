@@ -10,7 +10,7 @@ function updateCarousel() {
 }
 
 prevButton.addEventListener('click', (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
     currentIndex = (currentIndex - 1 + items.length) % items.length;
     updateCarousel();
 });
@@ -21,7 +21,7 @@ nextButton.addEventListener('click', (e) => {
     updateCarousel();
 });
 
-// Position initiale forcée
+
 updateCarousel();
 
 // Scroll Animations
